@@ -2,117 +2,117 @@
   "dishes": {
     "Spicy McCrispy": {
       "price": 20.50,
-      "types": [1],
+      "types": [0, 1],
       "combo-price": 29.70,
       "id": 61
     },
     "McCrispy Supreme": {
       "price": 24.90,
-      "types": [1],
+      "types": [0, 1],
       "combo-price": 32.90,
       "id": 64
     },
     "McCrispy": {
       "price": 20.50,
-      "types": [1],
+      "types": [0, 1],
       "combo-price": 29.70,
       "id": 63
     },
     "McChicken": {
       "price": 18.90,
-      "types": [1],
+      "types": [0, 1],
       "combo-price": 28.70,
       "id": 134
     },
     "Maestro Grand Classic": {
       "price": 28.50,
-      "types": [1],
+      "types": [0, 1],
       "combo-price": 36.50,
       "id": 65
     },
     "Maestro Bacon&Cheddar": {
       "price": 28.50,
-      "types": [1],
+      "types": [0, 1],
       "combo-price": 36.50,
       "id": 66
     },
     "Big Mac": {
       "price": 20.50,
-      "types": [1],
+      "types": [0, 1],
       "combo-price": 30.50,
       "id": 131
     },
     "WieśMac Podwójny": {
       "price": 25.90,
-      "types": [1],
+      "types": [0, 1],
       "combo-price": 35.50,
       "id": 140
     },
     "WieśMac": {
       "price": 20.20,
-      "types": [1],
+      "types": [0, 1],
       "combo-price": 30.30,
       "id": 133
     },
     "McRoyal Podwójny": {
       "price": 25.90,
-      "types": [1],
+      "types": [0, 1],
       "combo-price": 35.50,
       "id": 139
     },
     "McRoyal": {
       "price": 20.20,
-      "types": [1],
+      "types": [0, 1],
       "combo-price": 30.30,
       "id": 132
     },
     "Veggie Burger": {
       "price": 19.60,
-      "types": [1],
+      "types": [0, 1],
       "combo-price": 29.50,
       "id": 70
     },
     "McWrap Chrupiący Klasyczny": {
       "price": 21.20,
-      "types": [1],
+      "types": [0, 1],
       "combo-price": 30.90,
       "id": 141
     },
     "McWrap Chrupiący Bekon Deluxe": {
       "price": 21.70,
-      "types": [1],
+      "types": [0, 1],
       "combo-price": 31.40,
       "id": 142
     },
     "Veggie McWrap": {
       "price": 19.60,
-      "types": [1],
+      "types": [0, 1],
       "combo-price": 29.50,
       "id": 71
     },
     "Cheeseburger": {
       "price": 6.90,
-      "types": [2],
+      "types": [0, 2],
       "id": 130
     },
     "Hamburger": {
       "price": 6.50,
-      "types": [2],
+      "types": [0, 2],
       "id": 129
     },
     "Jalapeno Burger": {
       "price": 6.90,
-      "types": [2],
+      "types": [0, 2],
       "id": 135
     },
     "Chikker": {
       "price": 6.90,
-      "types": [2],
+      "types": [0, 2],
       "id": 136
     },
     "Red Chikker": {
       "price": 6.90,
-      "types": [2],
+      "types": [0, 2],
       "id": 137
     },
     "McDouble": {
@@ -155,20 +155,20 @@
     },
     "9 McNuggets": {
       "price": 20.90,
-      "types": [4],
+      "types": [0, 4],
       "sauces": 2,
       "id": 151
     },
     "6 McNuggets": {
       "price": 17.90,
-      "types": [1, 4],
+      "types": [0, 1, 4],
       "sauces": 1,
       "combo-price": 27.70,
       "id": 150
     },
     "20 McNuggets": {
       "price": 32.30,
-      "types": [4],
+      "types": [0, 4],
       "sauces": 3,
       "id": 152
     },
@@ -179,7 +179,7 @@
     },
     "McCrispy Tenders 3 szt.": {
       "price": 18.20,
-      "types": [1],
+      "types": [0, 1],
       "combo-price": 27.90,
       "id": 67
     },
