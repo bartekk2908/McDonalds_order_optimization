@@ -1,0 +1,551 @@
+{
+  "dishes": {
+    "Spicy McCrispy": {
+      "price": 20.50,
+      "types": [1],
+      "combo-price": 29.70,
+      "id": 61
+    },
+    "McCrispy Supreme": {
+      "price": 24.90,
+      "types": [1],
+      "combo-price": 32.90,
+      "id": 64
+    },
+    "McCrispy": {
+      "price": 20.50,
+      "types": [1],
+      "combo-price": 29.70,
+      "id": 63
+    },
+    "McChicken": {
+      "price": 18.90,
+      "types": [1],
+      "combo-price": 28.70,
+      "id": 134
+    },
+    "Maestro Grand Classic": {
+      "price": 28.50,
+      "types": [1],
+      "combo-price": 36.50,
+      "id": 65
+    },
+    "Maestro Bacon&Cheddar": {
+      "price": 28.50,
+      "types": [1],
+      "combo-price": 36.50,
+      "id": 66
+    },
+    "Big Mac": {
+      "price": 20.50,
+      "types": [1],
+      "combo-price": 30.50,
+      "id": 131
+    },
+    "WieśMac Podwójny": {
+      "price": 25.90,
+      "types": [1],
+      "combo-price": 35.50,
+      "id": 140
+    },
+    "WieśMac": {
+      "price": 20.20,
+      "types": [1],
+      "combo-price": 30.30,
+      "id": 133
+    },
+    "McRoyal Podwójny": {
+      "price": 25.90,
+      "types": [1],
+      "combo-price": 35.50,
+      "id": 139
+    },
+    "McRoyal": {
+      "price": 20.20,
+      "types": [1],
+      "combo-price": 30.30,
+      "id": 132
+    },
+    "Veggie Burger": {
+      "price": 19.60,
+      "types": [1],
+      "combo-price": 29.50,
+      "id": 70
+    },
+    "McWrap Chrupiący Klasyczny": {
+      "price": 21.20,
+      "types": [1],
+      "combo-price": 30.90,
+      "id": 141
+    },
+    "McWrap Chrupiący Bekon Deluxe": {
+      "price": 21.70,
+      "types": [1],
+      "combo-price": 31.40,
+      "id": 142
+    },
+    "Veggie McWrap": {
+      "price": 19.60,
+      "types": [1],
+      "combo-price": 29.50,
+      "id": 71
+    },
+    "Cheeseburger": {
+      "price": 6.90,
+      "types": [2],
+      "id": 130
+    },
+    "Hamburger": {
+      "price": 6.50,
+      "types": [2],
+      "id": 129
+    },
+    "Jalapeno Burger": {
+      "price": 6.90,
+      "types": [2],
+      "id": 135
+    },
+    "Chikker": {
+      "price": 6.90,
+      "types": [2],
+      "id": 136
+    },
+    "Red Chikker": {
+      "price": 6.90,
+      "types": [2],
+      "id": 137
+    },
+    "McDouble": {
+      "price": 9.50,
+      "types": [0],
+      "id": 138
+    },
+    "Sałatka Kurczak Premium": {
+      "price": 21.90,
+      "types": [3],
+      "sauces": 2,
+      "id": 144
+    },
+    "Sałatka": {
+      "price": 9.90,
+      "types": [3],
+      "sauces": 1,
+      "id": 143
+    },
+    "Chrupiące Marcheweczki": {
+      "price": 4.90,
+      "types": [0],
+      "id": 153
+    },
+    "Soczyste Jabłuszka": {
+      "price": 6.90,
+      "types": [0],
+      "id": 154
+    },
+    "Kubuś Mus": {
+      "price": 5.90,
+      "types": [0],
+      "id": 128
+    },
+    "Chicken Box": {
+      "price": 42.50,
+      "types": [4, 5],
+      "sauces": 2,
+      "ids": [151, 69]
+    },
+    "9 McNuggets": {
+      "price": 20.90,
+      "types": [4],
+      "sauces": 2,
+      "id": 151
+    },
+    "6 McNuggets": {
+      "price": 17.90,
+      "types": [1, 4],
+      "sauces": 1,
+      "combo-price": 27.70,
+      "id": 150
+    },
+    "20 McNuggets": {
+      "price": 32.30,
+      "types": [4],
+      "sauces": 3,
+      "id": 152
+    },
+    "McCrispy Tenders 5 szt.": {
+      "price": 22.90,
+      "types": [0],
+      "id": 68
+    },
+    "McCrispy Tenders 3 szt.": {
+      "price": 18.20,
+      "types": [1],
+      "combo-price": 27.90,
+      "id": 67
+    },
+    "Frytki Małe": {
+      "price": 8.70,
+      "types": [6],
+      "id": 173
+    },
+    "Frytki Średnie": {
+      "price": 9.70,
+      "types": [6],
+      "id": 174
+    },
+    "Frytki Duże": {
+      "price": 9.90,
+      "types": [6],
+      "id": 175
+    },
+    "Sriracha Mayo": {
+      "price": 1.90,
+      "types": [0],
+      "id": 181
+    },
+    "Ketchup Płatny": {
+      "price": 1.50,
+      "types": [0],
+      "id": 176
+    },
+    "Sos Czosnkowy": {
+      "price": 1.90,
+      "types": [0],
+      "id": 179
+    },
+    "Sos Śmietanowy": {
+      "price": 1.90,
+      "types": [0],
+      "id": 180
+    },
+    "Sos Barbeque": {
+      "price": 1.90,
+      "types": [0],
+      "id": 178
+    },
+    "Sos Słodko-Kwaśny": {
+      "price": 1.90,
+      "types": [0],
+      "id": 177
+    },
+    "Sos Vinegret": {
+      "price": 1.90,
+      "types": [0],
+      "id": 147
+    },
+    "Sos 1000 Wysp": {
+      "price": 1.90,
+      "types": [0],
+      "id": 146
+    },
+    "Sos Koperkowy": {
+      "price": 1.90,
+      "types": [0],
+      "id": 148
+    },
+    "Oliwa z Oliwek": {
+      "price": 1.90,
+      "types": [0],
+      "id": 145
+    },
+    "Cafe Latte 0,2l": {
+      "price": 13.20,
+      "types": [0],
+      "id": 9
+    },
+    "Cafe Latte 0,3l": {
+      "price": 14.20,
+      "types": [0],
+      "id": 10
+    },
+    "Cafe Latte 0,4l": {
+      "price": 15.20,
+      "types": [0],
+      "id": 11
+    },
+    "Cappuccino 0,2l": {
+      "price": 6.90,
+      "types": [0],
+      "id": 12
+    },
+    "Cappuccino 0,3l": {
+      "price": 11.90,
+      "types": [0],
+      "id": 13
+    },
+    "Cappuccino 0,4l": {
+      "price": 12.90,
+      "types": [0],
+      "id": 14
+    },
+    "Flat White 0,2l": {
+      "price": 13.20,
+      "types": [0],
+      "id": 15
+    },
+    "Flat White 0,3l": {
+      "price": 14.20,
+      "types": [0],
+      "id": 16
+    },
+    "Kawa z Mlekiem 0,2l": {
+      "price": 10.50,
+      "types": [0],
+      "id": 6
+    },
+    "Kawa z Mlekiem 0,3l": {
+      "price": 11.50,
+      "types": [0],
+      "id": 7
+    },
+    "Kawa z Mlekiem 0,4l": {
+      "price": 12.50,
+      "types": [0],
+      "id": 8
+    },
+    "Kawa Czarna 0,2l": {
+      "price": 9.50,
+      "types": [0],
+      "id": 3
+    },
+    "Kawa Czarna 0,3l": {
+      "price": 10.50,
+      "types": [0],
+      "id": 4
+    },
+    "Kawa Czarna 0,4l": {
+      "price": 11.50,
+      "types": [0],
+      "id": 5
+    },
+    "Espresso": {
+      "price": 7.70,
+      "types": [0],
+      "id": 1
+    },
+    "Podwójne Espresso": {
+      "price": 9.70,
+      "types": [0],
+      "id": 2
+    },
+    "Carmel Latte Macchiato 0,4l": {
+      "price": 16.90,
+      "types": [0],
+      "id": 17
+    },
+    "Apple Pie Latte Macchiato 0,4l": {
+      "price": 16.90,
+      "types": [0],
+      "id": 18
+    },
+    "Choco Latte Macchiato 0,4l": {
+      "price": 16.90,
+      "types": [0],
+      "id": 19
+    },
+    "Herbata": {
+      "price": 9.70,
+      "types": [0],
+      "id": 127
+    },
+    "Herbata Zimowa z Jabłkami": {
+      "price": 14.90,
+      "types": [0],
+      "id": 20
+    },
+    "Muffin z truskawkami i białą czekoladą": {
+      "price": 8.20,
+      "types": [0],
+      "id": 56
+    },
+    "Muffin z czekoladą": {
+      "price": 8.20,
+      "types": [0],
+      "id": 57
+    },
+    "Croissant maślany": {
+      "price": 7.20,
+      "types": [0],
+      "id": 54
+    },
+    "Croissant z nadzieniem kakaowym": {
+      "price": 8.20,
+      "types": [0],
+      "id": 55
+    },
+    "Ciacho słony karmel": {
+      "price": 7.20,
+      "types": [0],
+      "id": 51
+    },
+    "Ciacho z kawałkami czekolady": {
+      "price": 7.20,
+      "types": [0],
+      "id": 52
+    },
+    "Ciacho owsiane": {
+      "price": 7.20,
+      "types": [0],
+      "id": 53
+    },
+    "Ciastko Jabłkowe": {
+      "price": 7.90,
+      "types": [0],
+      "id": 89
+    },
+    "Makaronik o smaku malinowym": {
+      "price": 6.20,
+      "types": [0],
+      "id": 60
+    },
+    "Makaronik o smaku pistacjowym": {
+      "price": 6.20,
+      "types": [0],
+      "id": 58
+    },
+    "Makaronik o smaku czekoladowym": {
+      "price": 6.20,
+      "types": [0],
+      "id": 59
+    },
+    "McFlurry Lion o smaku waniliowym": {
+      "price": 10.90,
+      "types": [0],
+      "id": 75
+    },
+    "McFlurry Lion o smaku waniliowym z polewą o smaku czekoladowym": {
+      "price": 11.40,
+      "types": [0],
+      "id": 76
+    },
+    "McFlurry Lion o smaku waniliowym z polewą karmelową": {
+      "price": 11.40,
+      "types": [0],
+      "id": 77
+    },
+    "McFlurry Lion o smaku waniliowym z polewą truskawkową": {
+      "price": 11.40,
+      "types": [0],
+      "id": 78
+    },
+    "McFlurry M&M’s o smaku waniliowym": {
+      "price": 10.90,
+      "types": [0],
+      "id": 79
+    },
+    "McFlurry M&M’s o smaku waniliowym z polewą o smaku czekoladowym": {
+      "price": 11.40,
+      "types": [0],
+      "id": 80
+    },
+    "McFlurry M&M’s o smaku waniliowym z polewą karmelową": {
+      "price": 11.40,
+      "types": [0],
+      "id": 81
+    },
+    "McFlurry M&M’s o smaku waniliowym z polewą truskawkową": {
+      "price": 11.40,
+      "types": [0],
+      "id": 82
+    },
+    "Shake o smaku Truskawkowym 0,25l": {
+      "price": 9.20,
+      "types": [0],
+      "id": 87
+    },
+    "Shake o smaku Truskawkowym 0,4l": {
+      "price": 10.90,
+      "types": [0],
+      "id": 88
+    },
+    "Shake o smaku waniliowym 0,25l": {
+      "price": 9.20,
+      "types": [0],
+      "id": 85
+    },
+    "Shake o smaku waniliowym 0,4l": {
+      "price": 10.90,
+      "types": [0],
+      "id": 86
+    },
+    "Shake o smaku czekoladowym 0,25l": {
+      "price": 9.20,
+      "types": [0],
+      "id": 83
+    },
+    "Shake o smaku czekoladowym 0,4l": {
+      "price": 10.90,
+      "types": [0],
+      "id": 84
+    },
+    "Lody o smaku waniliowym z polewą truskawkową":{
+      "price": 9.90,
+      "types": [0],
+      "id": 73
+    },
+    "Lody o smaku waniliowym z polewą o smaku czekoladowym":{
+      "price": 9.90,
+      "types": [0],
+      "id": 72
+    },
+    "Lody o smaku waniliowym z polewą karmelową":{
+      "price": 9.90,
+      "types": [0],
+      "id": 74
+    },
+    "Sok Jabłkowy": {
+      "price": 7.90,
+      "types": [0],
+      "id": 126
+    },
+    "Sok Pomarańczowy": {
+      "price": 7.90,
+      "types": [0],
+      "id": 125
+    },
+    "Woda Gazowana/Niegazowana": {
+      "price": 7.90,
+      "types": [0],
+      "id": 124
+    },
+    "Happy Meal": {
+      "price": 17.90,
+      "types": [7]
+    },
+    "Drink": {
+      "price": 7.50,
+      "types": [8],
+      "medium-price": 9.90,
+      "large-price": 10.90
+    }
+
+  },
+  "standard-combo": {
+    "addition": [174, 143],
+    "drink": [110, 113, 116, 119, 122, 124, 127, 3, 6, 9, 12, 15]
+  },
+  "standard-combo-plus": {
+    "addition": [175, 143],
+    "drink": [111, 114, 117, 120, 123, 124, 127, 4, 7, 10, 13, 16, 84, 86, 88]
+  },
+  "2forU": {
+    "addition": [173, 109, 112, 115, 118, 121]
+  },
+  "2forU-plus": {
+    "addition": [174, 110, 113, 116, 119, 122]
+  },
+  "happy-meal": {
+    "dish": [129, 130, 149],
+    "addition-1": [154, 128],
+    "addition-2": [153, 173],
+    "drink": [124, 126, 125, 127, 109, 112, 115, 118, 121, 83, 85, 87]
+  },
+  "drink": {
+    "small-drink": [109, 112, 115, 118, 121],
+    "medium-drink": [110, 113, 116, 119, 122],
+    "large-drink": [111, 114, 117, 120, 123]
+  },
+  "fries-sauces": [176, 0],
+  "nuggets-sauces": [176, 0, 181, 180, 178, 177, 179],
+  "salad-sauces": [147, 146, 145, 148, 0]
+}

@@ -1,0 +1,9 @@
+0 - single 
+1 - standard combo
+2 - 2foru
+3 - salad
+4 - chickens
+5 - chicken box
+6 - fries
+7 - happy meal
+8 - drink
