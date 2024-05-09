@@ -150,26 +150,26 @@
     },
     "Chicken Box": {
       "price": 42.50,
-      "types": [4, 5],
+      "types": [5],
       "sauces": 2,
       "ids": [151, 69]
     },
     "9 McNuggets": {
       "price": 20.90,
-      "types": [0, 4],
+      "types": [4],
       "sauces": 2,
       "id": 151
     },
     "6 McNuggets": {
       "price": 17.90,
-      "types": [0, 1, 4],
+      "types": [1, 4],
       "sauces": 1,
       "combo-price": 27.70,
       "id": 150
     },
     "20 McNuggets": {
       "price": 32.30,
-      "types": [0, 4],
+      "types": [4],
       "sauces": 3,
       "id": 152
     },
