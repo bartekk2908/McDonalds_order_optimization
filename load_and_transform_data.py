@@ -1,5 +1,6 @@
 import json
 import pandas as pd
+import pickle
 
 from print_output import print_choice
 
@@ -86,6 +87,11 @@ def load_and_transform_data(excluded_types=()):
     return options_data
 
 
+def pickle_to_file(content):
+    with open("options.pkl", "wb") as f:
+        pickle.dump(content, f)
+
+
 if __name__ == "__main__":
     options = load_and_transform_data(excluded_types=[2, 3, 4, 5, 6, 7, 8])
 
@@ -93,4 +99,4 @@ if __name__ == "__main__":
         print(len(options[i]), end=" ")
     print()
 
-    print_choice(options, 48, True)
+    pickle_to_file(options)
