@@ -1,6 +1,6 @@
 0 - single 
 1 - standard combo
-2 - 2foru
+2 - 2forU
 3 - salad
 4 - chickens
 5 - chicken box
