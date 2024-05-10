@@ -151,8 +151,7 @@
     "Chicken Box": {
       "price": 42.50,
       "types": [5],
-      "sauces": 2,
-      "ids": [151, 69]
+      "ids": [151, 69, 173, 173]
     },
     "9 McNuggets": {
       "price": 20.90,

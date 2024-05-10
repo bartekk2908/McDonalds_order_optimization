@@ -6,7 +6,7 @@ from itertools import combinations_with_replacement
 from print_output import print_choice
 
 
-products = pd.read_excel("products.xlsx")
+products_data = pd.read_excel("products.xlsx")
 
 
 def append_options(options, name, price, *args):
@@ -15,7 +15,7 @@ def append_options(options, name, price, *args):
     for i in range(2, 10):
         macro_sum = 0
         for one_id in args:
-            macro_sum += products.iloc[one_id - 1, i]
+            macro_sum += products_data.iloc[one_id - 1, i]
         options[i].append(round(macro_sum, 2))
 
 
@@ -67,8 +67,8 @@ def load_and_transform_data(excluded_types=()):
                                     a_id = 143
                                 append_options(
                                     options_data,
-                                    dish + f" {combo_type} " + products.iloc[a_id - 1, 1] + " " + products.iloc[s_id - 1, 1] + " " + products.iloc[d_id - 1, 1],
-                                    offers_data['dishes'][dish]["combo-price"] + 0.00 if combo_type == 'standard-combo' else 3.00,
+                                    dish + f" {combo_type} " + products_data.iloc[a_id - 1, 1] + " " + products_data.iloc[s_id - 1, 1] + " " + products_data.iloc[d_id - 1, 1],
+                                    offers_data['dishes'][dish]["combo-price"] + (0.00 if combo_type == 'standard-combo' else 3.00),
                                     dish_id, a_id, s_id, d_id
                                 )
 
@@ -80,14 +80,14 @@ def load_and_transform_data(excluded_types=()):
                                 for s_id in offers_data["fries-sauces"]:
                                     append_options(
                                         options_data,
-                                        dish + f" {combo_type} " + products.iloc[a_id - 1, 1] + " " + products.iloc[s_id - 1, 1],
+                                        dish + f" {combo_type} " + products_data.iloc[a_id - 1, 1] + " " + products_data.iloc[s_id - 1, 1],
                                         cost,
                                         dish_id, a_id, s_id
                                     )
                             else:
                                 append_options(
                                     options_data,
-                                    dish + f" {combo_type} " + products.iloc[a_id - 1, 1],
+                                    dish + f" {combo_type} " + products_data.iloc[a_id - 1, 1],
                                     cost,
                                     dish_id, a_id
                                 )
@@ -96,7 +96,7 @@ def load_and_transform_data(excluded_types=()):
                     for s_ids in combinations_with_replacement(offers_data["salad-sauces"], offers_data["dishes"][dish]["sauces"]):
                         append_options(
                             options_data,
-                            dish + " " + " ".join(map(lambda s_id: products.iloc[s_id - 1, 1], s_ids)),
+                            dish + " " + " ".join(map(lambda a: products_data.iloc[a - 1, 1], s_ids)),
                             offers_data["dishes"][dish]["price"],
                             dish_id, *s_ids
                         )
@@ -105,25 +105,54 @@ def load_and_transform_data(excluded_types=()):
                     for s_ids in combinations_with_replacement(offers_data["nuggets-sauces"], offers_data["dishes"][dish]["sauces"]):
                         append_options(
                             options_data,
-                            dish + " " + " ".join(map(lambda s_id: products.iloc[s_id - 1, 1], s_ids)),
+                            dish + " " + " ".join(map(lambda a: products_data.iloc[a - 1, 1], s_ids)),
                             offers_data["dishes"][dish]["price"],
                             dish_id, *s_ids
                         )
 
                 case 5:     # chicken box
-                    pass
+                    for s1_ids in combinations_with_replacement(offers_data["nuggets-sauces"], 2):
+                        for s2_ids in combinations_with_replacement(offers_data["fries-sauces"], 2):
+                            append_options(
+                                options_data,
+                                dish + " " + products_data.iloc[s1_ids[0] - 1, 1] + " " + products_data.iloc[s1_ids[1] - 1, 1] +
+                                " " + products_data.iloc[s2_ids[0] - 1, 1] + " " + products_data.iloc[s2_ids[1] - 1, 1],
+                                offers_data["dishes"][dish]["price"],
+                                *offers_data["dishes"][dish]["ids"], *s1_ids, *s2_ids
+                            )
 
                 case 6:     # fries
                     for s_id in offers_data["fries-sauces"]:
                         append_options(
                             options_data,
-                            dish + " " + products.iloc[s_id - 1, 1],
+                            dish + " " + products_data.iloc[s_id - 1, 1],
                             offers_data["dishes"][dish]["price"],
                             dish_id, s_id
                         )
 
                 case 7:     # happy meal
-                    pass
+                    for m_id in offers_data["happy-meal"]["dish"]:
+                        for a1_id in offers_data["happy-meal"]["addition-1"]:
+                            for a2_id in offers_data["happy-meal"]["addition-2"]:
+                                for d_id in offers_data["happy-meal"]["drink"]:
+                                    if a2_id == 173:
+                                        for s_id in offers_data["fries-sauces"]:
+                                            append_options(
+                                                options_data,
+                                                dish + " " + products_data.iloc[m_id - 1, 1] + " " + products_data.iloc[a1_id - 1, 1] +
+                                                " " + products_data.iloc[a2_id - 1, 1] + " " + products_data.iloc[s_id - 1, 1] +
+                                                " " + products_data.iloc[d_id - 1, 1],
+                                                offers_data["dishes"][dish]["price"],
+                                                m_id, a1_id, a2_id, s_id, d_id
+                                            )
+                                    else:
+                                        append_options(
+                                            options_data,
+                                            dish + " " + products_data.iloc[m_id - 1, 1] + " " + products_data.iloc[a1_id - 1, 1] +
+                                            " " + products_data.iloc[a2_id - 1, 1] + " " + products_data.iloc[d_id - 1, 1],
+                                            offers_data["dishes"][dish]["price"],
+                                            m_id, a1_id, a2_id, d_id
+                                        )
 
                 case 8:     # drink
                     cost = {"small-drink": "price", "medium-drink": "medium-price", "large-drink": "large-price"}
@@ -131,7 +160,7 @@ def load_and_transform_data(excluded_types=()):
                         for d_id in offers_data["drink"][drink_type]:
                             append_options(
                                 options_data,
-                                products.iloc[d_id - 1, 1],
+                                products_data.iloc[d_id - 1, 1],
                                 offers_data["dishes"][dish][cost[drink_type]],
                                 d_id,
                             )
@@ -148,7 +177,7 @@ def pickle_to_file(content, filename):
 
 
 if __name__ == "__main__":
-    options = load_and_transform_data(excluded_types=[0, 1, 2, 3, 4, 5, 6, 7])
+    options = load_and_transform_data(excluded_types=[])
 
     for i in range(0, 10):
         print(len(options[i]), end=" ")
