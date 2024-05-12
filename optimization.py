@@ -27,11 +27,14 @@ if __name__ == "__main__":
 
     cost_sum = 0
     kcal_sum = 0
+    protein_sum = 0
     for i in range(len(results)):
         if results[i] >= 0.5:
             print(f"{options[0][i]} x {int(results[i])} \t\t i = {i}")
             cost_sum += options[1][i] * int(results[i])
             kcal_sum += options[2][i] * int(results[i])
+            protein_sum += options[8][i] * int(results[i])
     print(f"limit: {money_limit} zł")
     print(f"cost: {cost_sum} zł")
     print(f"{kcal_sum} kcal")
+    # print(f"{protein_sum} protein")

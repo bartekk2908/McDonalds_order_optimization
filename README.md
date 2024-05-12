@@ -15,6 +15,10 @@ then transformed using the free
 [online Adobe tool](https://www.adobe.com/pl/acrobat/online/pdf-to-excel.html)
 into an Excel spreadsheet file and organized manually (see `products.xlsx` file).
 
+The `products.xlsx`file preview:
+
+![products_preview](./pictures/products_preview.png)
+
 Data regarding the current offer of McDonald's restaurants was 
 obtained manually from the
 [McDonald's application](https://mcdonalds.pl/aplikacja-mobilna/)
@@ -22,6 +26,10 @@ obtained manually from the
 Due to price differences in individual McDonald's restaurants in Poland, it
 was necessary to limit data to data from one specific restaurant: 
 McDonald's Warsaw Radość.
+
+The `offers.json`file preview:
+
+![offers_preview](./pictures/offers_preview.png)
 
 To solve the knapsack problem,
 [the optimize module](https://docs.scipy.org/doc/scipy/reference/optimize.html)
@@ -35,6 +43,15 @@ of sandwiches, sides, drinks, sauces, etc.), excluding the
 customization of single meals, such as additional ingredients in a 
 sandwich.
 
+## Example results
+
+Number of calories maximization with 30 zł limit:
+
+![result_1](./pictures/result_1.png)
+
+Number of protein (grams) maximization with 30 zł limit:
+
+![result_2](./pictures/result_2.png)
 
 ## Setup
 

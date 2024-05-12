@@ -183,8 +183,8 @@ if __name__ == "__main__":
         print(len(options[i]), end=" ")
     print()
 
-    print(options[0])
-    print(options[1])
-    print(options[2])
+    # print(options[0])
+    # print(options[1])
+    # print(options[2])
 
     pickle_to_file(options, "options.pkl")
